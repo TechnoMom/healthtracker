@@ -97,10 +97,10 @@
 
 	  <form>
 	  <p><label for="mood">Mood:</label>
-		<input list="mood" name="mood" id="mood">
+		<input list="mood" name="mood" />
 
 <datalist id="mood">
-  <option value="Rad">
+  <option value="Great">
   <option value="Good">
   <option value="Meh">
   <option value="Bad">
@@ -108,39 +108,196 @@
 </datalist>
 </p>
 		</form>
+<form>
+<p>Blood Pressure<br />
+	<label for="bpsys">Systolic</label>:
+	<input type="text" id="bpsys" name="bpsys"><br />
+	<label for="bpdia">Diastolic</label>:
+	<input type="text" id="bpdia" name="bpdia"><br />
+</p>
+</form>
+	<form>
+		<p>
+		<label for="heartrate">Heart Rate:</label>
+		<input type="text" id="heartrate" name="heartrate"><br />
+		</p>
+	</form>
 
-	  <p>BP:____/____</p>
-	  sys/dia
-  
-	  <p>Heart rate:____</p>
-  
-	  <p>Oxygen:____SpO2</p>
-  
+	<form>
 	  <p>
-		Hours of sleep:____<br />
-		Sleep quality:____
+		<label for="oxygen">Oxygen SpO2:</label>  
+		<input type="text" id="oxygen" name="oxygen"><br />
+		</p>
+	</form>
+	<form>
+	  <p>
+		  <label for="sleeptime">Hours of Sleep</label>
+		  <input type="text" id="sleeptime" name="sleeptime"><br />
+			<label for="sleepquality">Sleep Quality</label>:
+			<input list="sleepquality" name="sleepquality" />
+			<datalist id="sleepquality">
+			  <option value="Great">
+			  <option value="Good">
+			  <option value="Meh">
+			  <option value="Bad">
+			  <option value="Awful">
+			</datalist>
 	  </p>
-  
-	  <p>
-		Activity type: (dropdown with option to add more? See activities.txt)<br />
-		How long?____
+	</form>
+
+	<form>
+	  <p><label for="activity">Activity:</label>
+		<input list="activity" name="activity" />
+		<datalist id="activity">
+			<option value="Aerial silks"></option>
+			<option value="Aerobics"></option>
+			<option value="Archery"></option>
+			<option value="Badminton"></option>
+			<option value="Ballet"></option>
+			<option value="Ballroom dancing"></option>
+			<option value="Baseball"></option>
+			<option value="Basketball"></option>
+			<option value="Boxing"></option>
+			<option value="Canoeing"></option>
+			<option value="Cleaning"></option>
+			<option value="Cycling"></option>
+			<option value="Fencing"></option>
+			<option value="Fishing"></option>
+			<option value="Football"></option>
+			<option value="Frisbee"></option>
+			<option value="Gardening"></option>
+			<option value="Geocaching"></option>
+			<option value="Golf"></option>
+			<option value="Gymnastics"></option>
+			<option value="Hiking"></option>
+			<option value="Hockey"></option>
+			<option value="Horseback riding"></option>
+			<option value="Hunting"></option>
+			<option value="Ice skating"></option>
+			<option value="Jazz dancing"></option>
+			<option value="Kayaking"></option>
+			<option value="Lacrosse"></option>
+			<option value="Martial arts"></option>
+			<option value="Parkour"></option>
+			<option value="Pickleball"></option>
+			<option value="Pilates"></option>
+			<option value="Ping-pong"></option>
+			<option value="Pole dancing"></option>
+			<option value="Racquetball"></option>
+			<option value="Rock climbing"></option>
+			<option value="Rodeo"></option>
+			<option value="Roller skating/blading"></option>
+			<option value="Rowing"></option>
+			<option value="Rugby"></option>
+			<option value="Running"></option>
+			<option value="Sex"></option>
+			<option value="Skateboarding"></option>
+			<option value="Skiing"></option>
+			<option value="Soccer"></option>
+			<option value="Surfing"></option>
+			<option value="Swimming"></option>
+			<option value="Swing dancing"></option>
+			<option value="Tap dancing"></option>
+			<option value="Tennis"></option>
+			<option value="Volleyball"></option>
+			<option value="Walking"></option>
+			<option value="Weight-lifting"></option>
+			<option value="Whitewater rafting"></option>
+			<option value="Wrestling"></option>
+			<option value="Yoga"></option>
+		</datalist>
+		<br />
+		
+		<p>
+			<label for="activitytime">How long?</label>
+			<input type="text" id="activitytime" name="activitytime"><br />
+			</p>
 	  </p>
-  
-	  <p>
-		Meditation type: (dropdown with option to add more? See meditation.txt)<br />
-		How long?____
+	</form>
+
+	<form>
+	  <p>	
+		<label for="meditation">Meditation type:</label>
+		<input list="meditation" name="meditation" />
+		<datalist id="meditation">
+		<option value="Body scan"></option>
+		<option value="Focused"></option>
+		<option value="Guided"></option>
+		<option value="Loving-kindness"></option>
+		<option value="Mantra"></option>
+		<option value="Mindfulness"></option>
+		<option value="Movement"></option>
+		<option value="Spiritual"></option>
+		<option value="Trascendental"></option>
+		<option value="Visualization"></option>
+		</datalist>
+<br />
+		<label for="meditationtime">How long?</label>
+		<input type="text" id="meditationtime" name="meditationtime"><br />
 	  </p>
-  
+	</form>
+<form>
 	  <p>
-		Medication taken? (Y or N)<br />
-		Changes? (Y or N) Descriptions:_________________________<br />
-		Side effects? (Y or N) Description:______________________
+		<label for="medication">Medication taken?</label>
+		
+		<div class="form-check">
+		<input class="form-check-input" type="radio" name="medsyes" id="medsyes" value="yes" checked>
+		<label class="form-check-label" for="medsyes">
+		  Yes
+		</label>
+	  </div>
+	  <div class="form-check">
+		<input class="form-check-input" type="radio" name="medsno" id="medsno" value="no">
+		<label class="form-check-label" for="medsno">
+		  No
+		</label>
+		<br />
+		<label for="medchanges">Changes?</label>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="medchangesyes" id="medchangesyes" value="yes" checked>
+			<label class="form-check-label" for="medchangesyes">
+			  Yes
+			</label>
+		  </div>
+		  <div class="form-check">
+			<input class="form-check-input" type="radio" name="medchangesno" id="medchangesno" value="no">
+			<label class="form-check-label" for="medchangesno">
+			  No
+			</label><br />
+		<label for="medchangesdesc">Description:</label>		
+			<input type="text" id="medchangesdesc" name="medchangesdesc"><br />
+
+		<label for="sideeffects">Side effects?</label>
+		<div class="form-check">
+			<input class="form-check-input" type="radio" name="sideeffectsyes" id="sideeffectsyes" value="yes" checked>
+			<label class="form-check-label" for="sideeffectsyes">
+			  Yes
+			</label>
+		  </div>
+		  <div class="form-check">
+			<input class="form-check-input" type="radio" name="sideefectsno" id="sideeffectsno" value="no">
+			<label class="form-check-label" for="sideeffectsno">
+			  No
+			</label><br />
+			<label for="sideeffectsdesc">Description:</label>
+			<input type="text" id="sideeffectsdesc" name="sideeffectsdesc"> <br />
 	  </p>
-  
+	</form>
+
+<form>
 	  <p>
-		Overall pain level? (emoji again?)<br />
-  
-		Pain map (see painlocations.txt):
+		  <label for="painlevel">Overall pain level:</label>
+		  <input list="painlevel" name="painlevel" />
+		  <datalist id="painlevel">
+			<option value="Great">
+			<option value="Good">
+			<option value="Meh">
+			<option value="Bad">
+			<option value="Awful">
+		  </datalist>
+			  <br />
+	</form>
+		Pain map:
 		<img src="images\painmap.png" />
 	  </p>
 
