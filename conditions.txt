@@ -1,0 +1,23 @@
+Allergies
+Anxiety
+Arthritis
+Asthma
+Cancer
+Chronic Fatigue Syndrome
+Chronic Obsturctive Pulmonary Disease (COPD)
+COVID-19
+Depression
+Diabetes
+Ehlers-Danlos Syndrome
+Epilepsy
+Fibromyalgia
+Heart Disease
+HIV
+Influenza
+Kidney Disease
+Meningitis
+Migraines
+Post-Traumatic Stress Disorder
+Spondylitis
+Traumatic Brain Injury (TBI)
+Tuberculosis (TB)

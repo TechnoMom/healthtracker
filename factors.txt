@@ -1,0 +1,12 @@
+Activity
+Blood pressure
+Blood sugar
+Heart rate
+Insulin
+Medication
+Meditation
+Mood
+Oxygen
+Pain
+Sleep
+Temperature
