@@ -1,3 +1,9 @@
+html,body
+{margin:15px;padding:15px}
+body
+{font: 76% arial,sans-serif}
+p
+{margin:0 10px 10px}
 /* Define the main Navigation block */
 .myNav {
     display: block;
@@ -30,3 +36,4 @@
 .title {
     padding-top: 20px;
 }
+
