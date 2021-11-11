@@ -4,6 +4,7 @@
     height: 50px;
     line-height: 50px;
     background-color: rgb(29, 0, 24);
+    padding-bottom: 20px;
 }
 /* Remove bullets, margin and padding */
 .myNav ul {
