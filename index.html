@@ -1,20 +1,36 @@
-
 <!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Heal and Track</title>
-		<!-- CSS only -->
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>=Heal and Track</title>
 
-		<link rel="stylesheet" href="style.css">
-	</head>
+    <!--Added Bootstrap 5 CSS-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!--Added Bootstrap 5 JavaScript-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous">
+	</script>
+
+    <link rel="stylesheet" href="style.css" />
 
 
 <body>
-	<h1>Heal & Track</h1>
+	<h1 class="title">Heal & Track</h1>
+
+    <p>Today: <span id="time"></span></p>
+    Date/Time
+    <input type="date" />
+    <input type="datetime-local" />
 	
 	<!-- add a navbar-->
 
@@ -77,13 +93,59 @@
 		<button type="submit" class="btn btn-primary">Sign in</button>
 	  </form>
 
+	  <p>Mood: <img src="images\moods.png"</p>
 
+	  <p>BP:____/____</p>
+	  sys/dia
+  
+	  <p>Heart rate:____</p>
+  
+	  <p>Oxygen:____SpO2</p>
+  
+	  <p>
+		Hours of sleep:____<br />
+		Sleep quality:____
+	  </p>
+  
+	  <p>
+		Activity type: (dropdown with option to add more? See activities.txt)<br />
+		How long?____
+	  </p>
+  
+	  <p>
+		Meditation type: (dropdown with option to add more? See meditation.txt)<br />
+		How long?____
+	  </p>
+  
+	  <p>
+		Medication taken? (Y or N)<br />
+		Changes? (Y or N) Descriptions:_________________________<br />
+		Side effects? (Y or N) Description:______________________
+	  </p>
+  
+	  <p>
+		Overall pain level? (emoji again?)<br />
+  
+		Pain map (see painlocations.txt):
+		<img src="images\painmap.png" />
+	  </p>
 
 	<button>Save</button>
 
-	<!-- JavaScript Bundle with Popper -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
 
 	
 </body>
-</html>
+
