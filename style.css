@@ -25,3 +25,7 @@
 .myNav li a.active {
     background-color: #500025;
 }
+
+.title {
+    padding-top: 20px;
+}
