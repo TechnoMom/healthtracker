@@ -120,14 +120,6 @@
 		</div>	
 
 
-
-
-
-
-
-
-
-
 		<fieldset class="row mb-3">
 		  <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
 		  <div class="col-sm-10">
@@ -161,90 +153,80 @@
 	  </form>
 
 	
-	  <p>
-		  <label for="sleeptime">Hours of Sleep</label>
-		  <input type="text" id="sleeptime" name="sleeptime"><br />
-			<label for="sleepquality">Sleep Quality</label>:
-			<input list="sleepquality" name="sleepquality" />
-			<datalist id="sleepquality">
-			  <option value="Great">
-			  <option value="Good">
-			  <option value="Meh">
-			  <option value="Bad">
-			  <option value="Awful">
-			</datalist>
-	  </p>
-	</form>
+	  <div class="row mb-3">
+		<label for="activity" class="col-sm-2 col-form-label">Activity</label>
 
-	<form>
-	  <p><label for="activity">Activity:</label>
-		<input list="activity" name="activity" />
-		<datalist id="activity">
-			<option value="Aerial silks"></option>
-			<option value="Aerobics"></option>
-			<option value="Archery"></option>
-			<option value="Badminton"></option>
-			<option value="Ballet"></option>
-			<option value="Ballroom dancing"></option>
-			<option value="Baseball"></option>
-			<option value="Basketball"></option>
-			<option value="Boxing"></option>
-			<option value="Canoeing"></option>
-			<option value="Cleaning"></option>
-			<option value="Cycling"></option>
-			<option value="Fencing"></option>
-			<option value="Fishing"></option>
-			<option value="Football"></option>
-			<option value="Frisbee"></option>
-			<option value="Gardening"></option>
-			<option value="Geocaching"></option>
-			<option value="Golf"></option>
-			<option value="Gymnastics"></option>
-			<option value="Hiking"></option>
-			<option value="Hockey"></option>
-			<option value="Horseback riding"></option>
-			<option value="Hunting"></option>
-			<option value="Ice skating"></option>
-			<option value="Jazz dancing"></option>
-			<option value="Kayaking"></option>
-			<option value="Lacrosse"></option>
-			<option value="Martial arts"></option>
-			<option value="Parkour"></option>
-			<option value="Pickleball"></option>
-			<option value="Pilates"></option>
-			<option value="Ping-pong"></option>
-			<option value="Pole dancing"></option>
-			<option value="Racquetball"></option>
-			<option value="Rock climbing"></option>
-			<option value="Rodeo"></option>
-			<option value="Roller skating/blading"></option>
-			<option value="Rowing"></option>
-			<option value="Rugby"></option>
-			<option value="Running"></option>
-			<option value="Sex"></option>
-			<option value="Skateboarding"></option>
-			<option value="Skiing"></option>
-			<option value="Soccer"></option>
-			<option value="Surfing"></option>
-			<option value="Swimming"></option>
-			<option value="Swing dancing"></option>
-			<option value="Tap dancing"></option>
-			<option value="Tennis"></option>
-			<option value="Volleyball"></option>
-			<option value="Walking"></option>
-			<option value="Weight-lifting"></option>
-			<option value="Whitewater rafting"></option>
-			<option value="Wrestling"></option>
-			<option value="Yoga"></option>
-		</datalist>
-		<br />
+		<div class="col-sm-4">
+			<input list="activity" name="activity" class="form-control" />
+			<datalist id="activity">
+				<option value="Aerial silks"></option>
+				<option value="Aerobics"></option>
+				<option value="Archery"></option>
+				<option value="Badminton"></option>
+				<option value="Ballet"></option>
+				<option value="Ballroom dancing"></option>
+				<option value="Baseball"></option>
+				<option value="Basketball"></option>
+				<option value="Boxing"></option>
+				<option value="Canoeing"></option>
+				<option value="Cleaning"></option>
+				<option value="Cycling"></option>
+				<option value="Fencing"></option>
+				<option value="Fishing"></option>
+				<option value="Football"></option>
+				<option value="Frisbee"></option>
+				<option value="Gardening"></option>
+				<option value="Geocaching"></option>
+				<option value="Golf"></option>
+				<option value="Gymnastics"></option>
+				<option value="Hiking"></option>
+				<option value="Hockey"></option>
+				<option value="Horseback riding"></option>
+				<option value="Hunting"></option>
+				<option value="Ice skating"></option>
+				<option value="Jazz dancing"></option>
+				<option value="Kayaking"></option>
+				<option value="Lacrosse"></option>
+				<option value="Martial arts"></option>
+				<option value="Parkour"></option>
+				<option value="Pickleball"></option>
+				<option value="Pilates"></option>
+				<option value="Ping-pong"></option>
+				<option value="Pole dancing"></option>
+				<option value="Racquetball"></option>
+				<option value="Rock climbing"></option>
+				<option value="Rodeo"></option>
+				<option value="Roller skating/blading"></option>
+				<option value="Rowing"></option>
+				<option value="Rugby"></option>
+				<option value="Running"></option>
+				<option value="Sex"></option>
+				<option value="Skateboarding"></option>
+				<option value="Skiing"></option>
+				<option value="Soccer"></option>
+				<option value="Surfing"></option>
+				<option value="Swimming"></option>
+				<option value="Swing dancing"></option>
+				<option value="Tap dancing"></option>
+				<option value="Tennis"></option>
+				<option value="Volleyball"></option>
+				<option value="Walking"></option>
+				<option value="Weight-lifting"></option>
+				<option value="Whitewater rafting"></option>
+				<option value="Wrestling"></option>
+				<option value="Yoga"></option>
+			</datalist>
+		</div>
+	</div>
+
+	<div class="row mb-3">
+		<label for="activitytime" class="col-sm-2 col-form-label">How long?</label>
+		<div class="col-sm-4">
+		  <input type="text" class="form-control" id="activitytime" >
+		</div>
+	</div>
+
 		
-		<p>
-			<label for="activitytime">How long?</label>
-			<input type="text" id="activitytime" name="activitytime"><br />
-			</p>
-	  </p>
-	</form>
 
 	<form>
 	  <p>	
