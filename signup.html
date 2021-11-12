@@ -126,45 +126,52 @@
             </select>
         </div>
       </div>
-    
-    
+
+      <div class="row mb-3">
+        <label for="symptoms" class="col-sm-2 col-form-label">What symptoms do you want to track?</label>
      
-      <form>
-      What symptoms do you want to track?<br>
-      <label for="symptoms">Symptoms:</label>
-      <select id="symptoms" name="symptoms" multiple>
-        <option value="painabdominal">Abdominal pain</option>
-        <option value="aura">Aura</option>
-        <option value="painchest">Chest pain</option>
-        <option value="constipation">Constipation</option>
-        <option value="cough">Cough</option>
-        <option value="diarrhea">Diarrhea</option>
-        <option value="difficultyswallowing">Difficulty swallowing</option>
-        <option value="dizziness">Dizziness</option>
-        <option value="earache">Earache</option>
-        <option value="eyediscomfort">Eye discomfort</option>
-        <option value="fever">Fever</option>
-        <option value="painfoot">Foot pain</option>
-        <option value="footorlegswelling">Foot or leg swelling</option>
-        <option value="headache">Headache</option>
-        <option value="heartpalpitations">Heart palpitations</option>
-        <option value="painhip">Hip pain</option>
-        <option value="painknee">Knee pain</option>
-        <option value="painlowback">Low back pain</option>
-        <option value="nasalcongestion">Nasal congestion</option>
-        <option value="nausea">Nausea or vomiting</option>
-        <option value="painneck">Neck pain</option>
-        <option value="neuropathy">Neuropathy</option>
-        <option value="painpelvis">Pelvic pain</option>
-        <option value="shortnessofbreath">Shortness of breath</option>
-        <option value="painshoulder">Shoulder pain</option>
-        <option value="rash">Skin rash</option>
-        <option value="sorethroat">Sore throat</option>
-        <option value="urinaryproblems">Urinary problems</option>
-        <option value="wheezing">Wheezing</option>
-      </select>
+        <div class="col-sm-4">
+          <Select class="form-select" id="symptoms" name="symptoms" multiple>
+            <datalist id="symptoms">
+              <option value="painabdominal">Abdominal pain</option>
+              <option value="aura">Aura</option>
+              <option value="painchest">Chest pain</option>
+              <option value="constipation">Constipation</option>
+              <option value="cough">Cough</option>
+              <option value="diarrhea">Diarrhea</option>
+              <option value="difficultyswallowing">Difficulty swallowing</option>
+              <option value="dizziness">Dizziness</option>
+              <option value="earache">Earache</option>
+              <option value="eyediscomfort">Eye discomfort</option>
+              <option value="fever">Fever</option>
+              <option value="painfoot">Foot pain</option>
+              <option value="footorlegswelling">Foot or leg swelling</option>
+              <option value="headache">Headache</option>
+              <option value="heartpalpitations">Heart palpitations</option>
+              <option value="painhip">Hip pain</option>
+              <option value="painknee">Knee pain</option>
+              <option value="painlowback">Low back pain</option>
+              <option value="nasalcongestion">Nasal congestion</option>
+              <option value="nausea">Nausea or vomiting</option>
+              <option value="painneck">Neck pain</option>
+              <option value="neuropathy">Neuropathy</option>
+              <option value="painpelvis">Pelvic pain</option>
+              <option value="shortnessofbreath">Shortness of breath</option>
+              <option value="painshoulder">Shoulder pain</option>
+              <option value="rash">Skin rash</option>
+              <option value="sorethroat">Sore throat</option>
+              <option value="urinaryproblems">Urinary problems</option>
+              <option value="wheezing">Wheezing</option>
+            </datalist>
+          </select>
+        </div>
+     </div>  
+    
+      <button type="submit" class="btn btn-primary">Sign Up</button>
+     
+
     </form>
-    <button type="submit" class="btn btn-primary">Sign in</button>
+    
     
   </body>
 </html>
