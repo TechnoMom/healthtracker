@@ -28,20 +28,36 @@
 
 
 <body>
-	<h1 class="title">Heal & Track</h1>
-
-
 	
 	<!-- add a navbar-->
 
-	<nav class="myNav">                                 <!-- Any element can be used here -->
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="dashboard.html">Dashboard</a></li>
-			<li><a href="about.html">About</a></li>
-		</ul>
-	</nav>
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
 
+		<div class="container">
+		  <a class="navbar-brand" href="index.html">
+			<img class="d-inline-block align-top" src="images/Track and Heal.png" alt="Track and Heal" width="200" height="100" >
+		  </a>
+		  <button 
+		  type="button"
+		  data-bs-toggle="collapse"
+		  class="navbar-toggler"
+		  aria-controls="#navbarNav"
+		  aria-expanded="false"
+		  aria-label="Toggle navigation"
+  
+		  >
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+			  <li><a class="nav-link active" href="index.html">Home</a></li>
+			  <li><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
+			  <li><a class="nav-link active" href="about.html">About</a></li>
+			</ul>
+		  </div>
+  
+		</div>
+	  </nav>
 	<!--Adding a Form to save the data-->
 	<p>Today: <span id="time"> Date/Time</span></p>
 	<input type="date" />
@@ -380,15 +396,13 @@
 
 	</form>
 
-		
 
-<form>
 
 		Pain map:
 		<img src="images\painmap.png" />
 	  </p>
 
-	<button>Save</button>
+
 
 
 
