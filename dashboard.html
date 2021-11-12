@@ -223,7 +223,7 @@
 		<div class="row mb-3">
 			<label for="activitytime" class="col-sm-2 col-form-label">How long?</label>
 			<div class="col-sm-4">
-			<input type="text" class="form-control" id="activitytime" >
+				<input type="text" class="form-control" id="activitytime" >
 			</div>
 		</div>
 
@@ -247,6 +247,93 @@
 				</datalist>
 			</div>
 		</div>
+
+		<div class="row mb-3">
+			<label for="meditationtime" class="col-sm-2 col-form-label">How long?</label>
+			<div class="col-sm-4">
+				<input type="text" class="form-control" id="meditationtime" >
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			<label for="medications" class="col-sm-2 col-form-label">What Medications do you take? What dosage?</label>
+			<div class="col-sm-4">
+				<input type="text" class="form-control" id="medications" placeholder="medication name" >
+			</div>
+			<div class="col-sm-4">
+				<input type="text" class="form-control" id="medications" placeholder="dosage" >
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			<label for="medications" class="col-sm-2 col-form-label"></label>
+			<div class="col-sm-4">
+				<input type="text" class="form-control" id="medications" placeholder="medication name" >
+			</div>
+			<div class="col-sm-4">
+				<input type="text" class="form-control" id="medications" placeholder="dosage" >
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			<label for="medications" class="col-sm-2 col-form-label"></label>
+			<div class="col-sm-4">
+				<input type="text" class="form-control" id="medications" placeholder="medication name" >
+			</div>
+			<div class="col-sm-4">
+				<input type="text" class="form-control" id="medications" placeholder="dosage" >
+			</div>
+		</div>
+
+		<div class="row mb-3">
+			
+			<label for="medication?" class="col-sm-2 col-form-label">Did you take your medication?</label>
+			
+			<div class="col-sm-2">
+			  <div class="form-check">
+				<input class="form-check-input" type="checkbox" id="medicationCheckYes">
+				<label class="form-check-label" for="medicationCheckYes">
+				  Yes
+				</label>
+			  </div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" id="medicationCheckNO">
+				  <label class="form-check-label" for="medicationCheckNO">
+					No
+				  </label>
+				</div>
+			  </div>
+		  </div>
+
+		  <div class="row mb-3">
+			
+			<label for="medicationChanges" class="col-sm-2 col-form-label">Any Changes?</label>
+			
+			<div class="col-sm-2">
+			  <div class="form-check">
+				<input class="form-check-input" type="checkbox" id="medicationChangesYes">
+				<label class="form-check-label" for="medicationChangesYes">
+				  Yes
+				</label>
+			  </div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" id="medicationChangesNO">
+				  <label class="form-check-label" for="medicationChangesNO">
+					No
+				  </label>
+				</div>
+			  </div>
+		  </div>
+
+
+		  
+		<br></br>
 		
 		<button type="submit" class="btn btn-primary">Save</button>
 
@@ -254,46 +341,7 @@
 
 		
 
-	<form>
-	  <p>	
-		<label for="meditation">Meditation type:</label>
-		<input list="meditation" name="meditation" />
-		<datalist id="meditation">
-		
-		</datalist>
-<br />
-		<label for="meditationtime">How long?</label>
-		<input type="text" id="meditationtime" name="meditationtime"><br />
-	  </p>
-	</form>
-<form>
-	  <p>
-		<label for="medication">Medication taken?</label>
-		
-		<div class="form-check">
-		<input class="form-check-input" type="radio" name="medsyes" id="medsyes" value="yes" checked>
-		<label class="form-check-label" for="medsyes">
-		  Yes
-		</label>
-	  </div>
-	  <div class="form-check">
-		<input class="form-check-input" type="radio" name="medsno" id="medsno" value="no">
-		<label class="form-check-label" for="medsno">
-		  No
-		</label>
-		<br />
-		<label for="medchanges">Changes?</label>
-		<div class="form-check">
-			<input class="form-check-input" type="radio" name="medchangesyes" id="medchangesyes" value="yes" checked>
-			<label class="form-check-label" for="medchangesyes">
-			  Yes
-			</label>
-		  </div>
-		  <div class="form-check">
-			<input class="form-check-input" type="radio" name="medchangesno" id="medchangesno" value="no">
-			<label class="form-check-label" for="medchangesno">
-			  No
-			</label><br />
+
 		<label for="medchangesdesc">Description:</label>		
 			<input type="text" id="medchangesdesc" name="medchangesdesc"><br />
 
