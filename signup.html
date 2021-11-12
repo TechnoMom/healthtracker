@@ -41,51 +41,52 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
           <ul class="navbar-nav">
             <li><a class="nav-link active" href="index.html">Home</a></li>
-            <li><a class="nav-link active" href="dashboard.html">Dashboard</a></li>
             <li><a class="nav-link active" href="about.html">About</a></li>
           </ul>
+
+          <a class="nav-link active" href="dashboard.html">Username</a>
         </div>
 
       </div>
     </nav>
 	  
-<form>
-    <p><label for="fname">First Name:</label>
-    <input type="text" id "fname" name="fname"><br>
-      <label for="email">Email address:</label>
-      <input type="text" id "email" name="email">
-  </p>
-  </form>
     <form>
-      <input type="password" placeholder="Enter your password" />
-      <input type="submit" value="Login" />
-    </form>
+      <div class="row mb-3">
+        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-4">
+          <input type="email" class="form-control" id="inputEmail3">
+        </div>
+      </div>
+      <div class="row mb-3">
+        <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-4">
+          <input type="password" class="form-control" id="inputPassword3">
+        </div>
+      </div>
 
-    <p>
-      <form>
-      Which health factors do you want to track?<br>
+  
+      <p>Which health factors do you want to track?</p>
       <label for="factors">Factors:</label>
-      <Select id="factors" name="factors" multiple>
-      <option value="activity">Activity</option>
-      <option value="bloodpressure">Blood pressure</option>
-      <option value="bloodsugar">Blood sugar</option>
-      <option value="Heart rate">Heart rate</option>
-      <option value="insulin">Insulin</option>
-      <option value="medication">Medication</option>
-      <option value="meditation">Meditation</option>
-      <option value="menstrualcycle">Menstrual cycle</option>
-      <option value="mood">Mood</option>
-      <option value="oxygen">Oxygen levels</option>
-      <option value="pain">Pain level</option>
-      <option value="sleep">Sleep</option>
-      <option value="temperature">Temperature</option>
+      <Select class="form-select" id="factors" name="factors" multiple >
+        <option value="activity">Activity</option>
+        <option value="bloodpressure">Blood pressure</option>
+        <option value="bloodsugar">Blood sugar</option>
+        <option value="Heart rate">Heart rate</option>
+        <option value="insulin">Insulin</option>
+        <option value="medication">Medication</option>
+        <option value="meditation">Meditation</option>
+        <option value="menstrualcycle">Menstrual cycle</option>
+        <option value="mood">Mood</option>
+        <option value="oxygen">Oxygen levels</option>
+        <option value="pain">Pain level</option>
+        <option value="sleep">Sleep</option>
+        <option value="temperature">Temperature</option>
     </Select>
       </form>
-    </p>
-    <p>
+    
       <form>
       What conditions do you want to track?<br>
         <label for="conditions">Conditions:</label>
@@ -152,6 +153,7 @@
         <option value="wheezing">Wheezing</option>
       </select>
     </form>
-    </p>
+    <button type="submit" class="btn btn-primary">Sign in</button>
+    
   </body>
 </html>
