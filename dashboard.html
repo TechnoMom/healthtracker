@@ -308,7 +308,7 @@
 			  </div>
 		  </div>
 
-		  <div class="row mb-3">
+		<div class="row mb-3">
 			
 			<label for="medicationChanges" class="col-sm-2 col-form-label">Any Changes?</label>
 			
@@ -328,10 +328,51 @@
 					No
 				  </label>
 				</div>
+			  
+		 	</div>
+		</div> 
+
+		<div class="row mb-3">
+			
+			<label for="Side-Effects" class="col-sm-2 col-form-label">Side-Effects?</label>
+			
+			<div class="col-sm-2">
+			  <div class="form-check">
+				<input class="form-check-input" type="checkbox" id="Side-EffectsYes">
+				<label class="form-check-label" for="Side-EffectsYes">
+				  Yes
+				</label>
 			  </div>
-		  </div>
+			</div>
+
+			<div class="col-sm-2">
+				<div class="form-check">
+				  <input class="form-check-input" type="checkbox" id="Side-EffectsNO">
+				  <label class="form-check-label" for="Side-EffectsNO">
+					No
+				  </label>
+				</div>
+			  
+		 	</div>
+		</div>
+
+		<div class="row mb-3">
+			<label for="painlevel" class="col-sm-2 col-form-label">Overall Pain Level</label>
+
+			<div class="col-sm-4">
+				<input list="painlevel" name="painlevel" class="form-control" />
+				<datalist id="painlevel">
+					<option value="Great">
+					<option value="Good">
+					<option value="Meh">
+					<option value="Bad">
+					<option value="Awful">
+				</datalist>
+			</div>
+		</div>	
 
 
+		  	
 		  
 		<br></br>
 		
@@ -341,40 +382,8 @@
 
 		
 
-
-		<label for="medchangesdesc">Description:</label>		
-			<input type="text" id="medchangesdesc" name="medchangesdesc"><br />
-
-		<label for="sideeffects">Side effects?</label>
-		<div class="form-check">
-			<input class="form-check-input" type="radio" name="sideeffectsyes" id="sideeffectsyes" value="yes" checked>
-			<label class="form-check-label" for="sideeffectsyes">
-			  Yes
-			</label>
-		  </div>
-		  <div class="form-check">
-			<input class="form-check-input" type="radio" name="sideefectsno" id="sideeffectsno" value="no">
-			<label class="form-check-label" for="sideeffectsno">
-			  No
-			</label><br />
-			<label for="sideeffectsdesc">Description:</label>
-			<input type="text" id="sideeffectsdesc" name="sideeffectsdesc"> <br />
-	  </p>
-	</form>
-
 <form>
-	  <p>
-		  <label for="painlevel">Overall pain level:</label>
-		  <input list="painlevel" name="painlevel" />
-		  <datalist id="painlevel">
-			<option value="Great">
-			<option value="Good">
-			<option value="Meh">
-			<option value="Bad">
-			<option value="Awful">
-		  </datalist>
-			  <br />
-	</form>
+
 		Pain map:
 		<img src="images\painmap.png" />
 	  </p>
