@@ -103,7 +103,7 @@
 				<input type="text"  class="form-control" id="sleeptime" name="sleeptime">
 			</div>
 		</div>
-		<div>
+		
 		<div class="row mb-3">
 			<label for="sleepquality" class="col-sm-2 col-form-label">Sleep Quality</label>
 
@@ -149,16 +149,16 @@
 			</div>
 		  </div>
 		</div>
-		<button type="submit" class="btn btn-primary">Sign in</button>
-	  </form>
+		
+	  
 
 	
-	  <div class="row mb-3">
-		<label for="activity" class="col-sm-2 col-form-label">Activity</label>
+	  	<div class="row mb-3">
+			<label for="activity" class="col-sm-2 col-form-label">Activity</label>
 
-		<div class="col-sm-4">
-			<input list="activity" name="activity" class="form-control" />
-			<datalist id="activity">
+			<div class="col-sm-4">
+				<input list="activity" name="activity" class="form-control" />
+				<datalist id="activity">
 				<option value="Aerial silks"></option>
 				<option value="Aerobics"></option>
 				<option value="Archery"></option>
@@ -215,16 +215,42 @@
 				<option value="Whitewater rafting"></option>
 				<option value="Wrestling"></option>
 				<option value="Yoga"></option>
-			</datalist>
+				</datalist>
+			</div>
 		</div>
-	</div>
+	
 
-	<div class="row mb-3">
-		<label for="activitytime" class="col-sm-2 col-form-label">How long?</label>
-		<div class="col-sm-4">
-		  <input type="text" class="form-control" id="activitytime" >
+		<div class="row mb-3">
+			<label for="activitytime" class="col-sm-2 col-form-label">How long?</label>
+			<div class="col-sm-4">
+			<input type="text" class="form-control" id="activitytime" >
+			</div>
 		</div>
-	</div>
+
+
+		<div class="row mb-3">
+			<label for="meditation" class="col-sm-2 col-form-label">Meditation</label>
+
+			<div class="col-sm-4">
+				<input list="meditation" name="meditation" class="form-control" />
+				<datalist id="meditation">
+					<option value="Body scan"></option>
+					<option value="Focused"></option>
+					<option value="Guided"></option>
+					<option value="Loving-kindness"></option>
+					<option value="Mantra"></option>
+					<option value="Mindfulness"></option>
+					<option value="Movement"></option>
+					<option value="Spiritual"></option>
+					<option value="Trascendental"></option>
+					<option value="Visualization"></option>
+				</datalist>
+			</div>
+		</div>
+		
+		<button type="submit" class="btn btn-primary">Save</button>
+
+	</form>
 
 		
 
@@ -233,16 +259,7 @@
 		<label for="meditation">Meditation type:</label>
 		<input list="meditation" name="meditation" />
 		<datalist id="meditation">
-		<option value="Body scan"></option>
-		<option value="Focused"></option>
-		<option value="Guided"></option>
-		<option value="Loving-kindness"></option>
-		<option value="Mantra"></option>
-		<option value="Mindfulness"></option>
-		<option value="Movement"></option>
-		<option value="Spiritual"></option>
-		<option value="Trascendental"></option>
-		<option value="Visualization"></option>
+		
 		</datalist>
 <br />
 		<label for="meditationtime">How long?</label>
