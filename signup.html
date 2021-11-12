@@ -67,57 +67,68 @@
         </div>
       </div>
 
+      
+
+      <div class="row mb-3">
+        <label for="factors" class="col-sm-2 col-form-label">What Health Factors do you want to track?</label>
   
-      <p>Which health factors do you want to track?</p>
-      <label for="factors">Factors:</label>
-      <Select class="form-select" id="factors" name="factors" multiple >
-        <option value="activity">Activity</option>
-        <option value="bloodpressure">Blood pressure</option>
-        <option value="bloodsugar">Blood sugar</option>
-        <option value="Heart rate">Heart rate</option>
-        <option value="insulin">Insulin</option>
-        <option value="medication">Medication</option>
-        <option value="meditation">Meditation</option>
-        <option value="menstrualcycle">Menstrual cycle</option>
-        <option value="mood">Mood</option>
-        <option value="oxygen">Oxygen levels</option>
-        <option value="pain">Pain level</option>
-        <option value="sleep">Sleep</option>
-        <option value="temperature">Temperature</option>
-    </Select>
-      </form>
+        <div class="col-sm-4">
+          <Select class="form-select" id="factors" name="factors" multiple>
+            <datalist id="factors">
+              <option value="activity">Activity</option>
+              <option value="bloodpressure">Blood pressure</option>
+              <option value="bloodsugar">Blood sugar</option>
+              <option value="Heart rate">Heart rate</option>
+              <option value="insulin">Insulin</option>
+              <option value="medication">Medication</option>
+              <option value="meditation">Meditation</option>
+              <option value="menstrualcycle">Menstrual cycle</option>
+              <option value="mood">Mood</option>
+              <option value="oxygen">Oxygen levels</option>
+              <option value="pain">Pain level</option>
+              <option value="sleep">Sleep</option>
+              <option value="temperature">Temperature</option>
+            </datalist>
+          </select>
+        </div>
+      </div>
+        <!--conditions--> 
+      <div class="row mb-3">
+          <label for="conditions" class="col-sm-2 col-form-label">What conditions do you want to track?</label>
+       
+          <div class="col-sm-4">
+            <Select class="form-select" id="conditions" name="conditions" multiple>
+              <datalist id="conditions">
+                <option value="allergies">Allergies</option>
+                <option value="anxiety">Anxiety</option>
+                <option value="arthritis">Arthritis</option>
+                <option value="asthma">Asthma</option>
+                <option value="cancer">Cancer</option>
+                <option value="cfs">Chronic fatigue syndrome (CFS)</option>
+                <option value="copd">Chronic obstructive pulmonary disease (COPD)</option>
+                <option value="covid-19">COVID-19</option>
+                <option value="depression">Depression</option>
+                <option value="diabetes">Diabetes</option>
+                <option value="eds">Ehlers-Danlos syndrom (EDS)</option>
+                <option value="epilepsy">Epilepsy</option>
+                <option value="fibromyalgia">Fibromyalgia</option>
+                <option value="heartdisease">Heart disease</option>
+                <option value="hiv">HIV</option>
+                <option value="influenza">Influenza</option>
+                <option value="kidneydisease">Kidney disease</option>
+                <option value="meningitis">Meningitis</option>
+                <option value="migraines">Migraines</option>
+                <option value="ptsd">Post-traumatic stress disorder</option>
+                <option value="spondylitis">Spondylitis</option>
+                <option value="tbi">Traumatic brain injury</option>
+                <option value="tb">Tuberculosis</option>
+              </datalist>
+            </select>
+        </div>
+      </div>
     
-      <form>
-      What conditions do you want to track?<br>
-        <label for="conditions">Conditions:</label>
-        <select id="conditions" name="conditions" multiple>
-          <option value="allergies">Allergies</option>
-          <option value="anxiety">Anxiety</option>
-          <option value="arthritis">Arthritis</option>
-          <option value="asthma">Asthma</option>
-          <option value="cancer">Cancer</option>
-          <option value="cfs">Chronic fatigue syndrome (CFS)</option>
-          <option value="copd">Chronic obstructive pulmonary disease (COPD)</option>
-          <option value="covid-19">COVID-19</option>
-          <option value="depression">Depression</option>
-          <option value="diabetes">Diabetes</option>
-          <option value="eds">Ehlers-Danlos syndrom (EDS)</option>
-          <option value="epilepsy">Epilepsy</option>
-          <option value="fibromyalgia">Fibromyalgia</option>
-          <option value="heartdisease">Heart disease</option>
-          <option value="hiv">HIV</option>
-          <option value="influenza">Influenza</option>
-          <option value="kidneydisease">Kidney disease</option>
-          <option value="meningitis">Meningitis</option>
-          <option value="migraines">Migraines</option>
-          <option value="ptsd">Post-traumatic stress disorder</option>
-          <option value="spondylitis">Spondylitis</option>
-          <option value="tbi">Traumatic brain injury</option>
-          <option value="tb">Tuberculosis</option>
-        </select>
-    </form>
-    </p>
-    <p>
+    
+     
       <form>
       What symptoms do you want to track?<br>
       <label for="symptoms">Symptoms:</label>
