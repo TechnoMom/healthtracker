@@ -1,6 +1,8 @@
 
 /* Define the main Navigation block */
-
+body {
+    font-family: 'Montserrat';font-size: 22px;
+}
 
 form
 {margin:15px;padding:15px}
