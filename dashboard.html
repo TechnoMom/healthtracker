@@ -66,21 +66,18 @@
 		</div>
 		
 		<div class="row mb-3">
-		
-			<label for="Mood" class="col-sm-2">Mood</label>
-			<div class="btn-group col-sm-2">
-				<button type="button" class="btn btn-secondary dropdown-toggle" id ="Mood" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-				
-				</button>
-				<ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-					<li><button class="dropdown-item" type="button">Great</button></li>
-					<li><button class="dropdown-item" type="button">Good</button></li>
-					<li><button class="dropdown-item" type="button">Meh</button></li>
-					<li><button class="dropdown-item" type="button">Bad</button></li>
-					<li><button class="dropdown-item" type="button">Awful</button></li>
-				</ul>
+			<label for="Mood" class="col-sm-2 col-form-label">Mood</label>
+
+			<div class="col-sm-4">
+				<input list="mood" name="mood" class="form-control" />
+				<datalist id="mood">
+					<option value="Great">
+					<option value="Good">
+					<option value="Meh">
+					<option value="Bad">
+					<option value="Awful">
+				</datalist>
 			</div>
-				
 		</div>
 
 		<div class="row mb-3">
@@ -97,22 +94,30 @@
 			</div>
 		</div>
 
+
+
 		<div class="row mb-3">
 		
-			<label for="Sleep-btn" class="col-sm-2">How did you sleep</label>
-			<div class="btn-group col-sm-2">
-				<button type="button" class="btn btn-secondary dropdown-toggle" id ="Sleep-btn" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-				</button>
-				<ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
-					<li><button class="dropdown-item" type="button">Great</button></li>
-					<li><button class="dropdown-item" type="button">Good</button></li>
-					<li><button class="dropdown-item" type="button">Meh</button></li>
-					<li><button class="dropdown-item" type="button">Bad</button></li>
-					<li><button class="dropdown-item" type="button">Awful</button></li>
-				</ul>
+			<label for="sleeptime" class="col-sm-2 col-form-label">Hours of Sleep</label>
+			<div class="col-sm-4">
+				<input type="text"  class="form-control" id="sleeptime" name="sleeptime">
 			</div>
-				
 		</div>
+		<div>
+		<div class="row mb-3">
+			<label for="sleepquality" class="col-sm-2 col-form-label">Sleep Quality</label>
+
+			<div class="col-sm-4">
+				<input list="sleepquality" name="sleepquality" class="form-control" />
+				<datalist id="sleepquality">
+					<option value="Great">
+					<option value="Good">
+					<option value="Meh">
+					<option value="Bad">
+					<option value="Awful">
+				</datalist>
+			</div>
+		</div>	
 
 
 
