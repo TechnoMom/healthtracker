@@ -47,6 +47,7 @@
 	<input type="date" />
     <input type="datetime-local" />
 	<form>
+
 		<div class="row mb-3">
 		  <label for="Blood Pressure" class="col-sm-2 col-form-label">Blood Pressure</label>
 		  <div class="col-sm-2">
@@ -56,6 +57,7 @@
 			<input type="text" class="form-control" id="Blood Pressure" placeholder="DIA">
 		  </div>
 		</div>
+
 		<div class="row mb-3">
 		  <label for="Heart Rate" class="col-sm-2 col-form-label">Heart Rate</label>
 		  <div class="col-sm-4">
@@ -80,6 +82,14 @@
 			</div>
 				
 		</div>
+
+		<div class="row mb-3">
+			<label for="Oxygen" class="col-sm-2 col-form-label">Oxygen</label>
+			<div class="col-sm-4">
+			  <input type="text" class="form-control" id="Oxygen" placeholder="SpO2">
+			</div>
+		  </div>
+
 		<fieldset class="row mb-3">
 		  <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
 		  <div class="col-sm-10">
@@ -98,6 +108,7 @@
 			
 		  </div>
 		</fieldset>
+
 		<div class="row mb-3">
 		  <div class="col-sm-10 offset-sm-2">
 			<div class="form-check">
@@ -111,41 +122,7 @@
 		<button type="submit" class="btn btn-primary">Sign in</button>
 	  </form>
 
-	  <form>
-	  <p><label for="mood">Mood:</label>
-		<input list="mood" name="mood" />
-
-<datalist id="mood">
-  <option value="Great">
-  <option value="Good">
-  <option value="Meh">
-  <option value="Bad">
-  <option value="Awful">
-</datalist>
-</p>
-		</form>
-<form>
-<p>Blood Pressure<br />
-	<label for="bpsys">Systolic</label>:
-	<input type="text" id="bpsys" name="bpsys"><br />
-	<label for="bpdia">Diastolic</label>:
-	<input type="text" id="bpdia" name="bpdia"><br />
-</p>
-</form>
-	<form>
-		<p>
-		<label for="heartrate">Heart Rate:</label>
-		<input type="text" id="heartrate" name="heartrate"><br />
-		</p>
-	</form>
-
-	<form>
-	  <p>
-		<label for="oxygen">Oxygen SpO2:</label>  
-		<input type="text" id="oxygen" name="oxygen"><br />
-		</p>
-	</form>
-	<form>
+	
 	  <p>
 		  <label for="sleeptime">Hours of Sleep</label>
 		  <input type="text" id="sleeptime" name="sleeptime"><br />
